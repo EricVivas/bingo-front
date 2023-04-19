@@ -6,7 +6,9 @@ import Button from "@mui/material/Button";
 import BoardBingo from "./components/BoardBingo";
 import { Typography } from "@mui/material";
 
-const socket = io("http://localhost:3001", {
+const URL_SERVER = "https://project-bingo-back.herokuapp.com";
+
+const socket = io(URL_SERVER, {
   autoConnect: false,
 });
 
