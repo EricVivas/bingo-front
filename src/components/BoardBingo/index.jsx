@@ -1,6 +1,11 @@
 import Box from "@mui/material/Box";
 
-const BoardBingo = ({ board = "", markedCells = [] }) => {
+const BoardBingo = ({
+  board = "",
+  markedCells = [],
+  marginLeft = "200px",
+  marginRight = "10px",
+}) => {
   const numbers = board.split("-");
   return (
     <Box
@@ -10,8 +15,8 @@ const BoardBingo = ({ board = "", markedCells = [] }) => {
         flexWrap: "wrap",
         padding: "5px",
         border: "1px solid",
-        marginLeft: "200px",
-        marginRight: "10px",
+        marginLeft,
+        marginRight,
       }}
     >
       <Box sx={{ width: "20%", backgroundColor: "grey" }}>B</Box>
